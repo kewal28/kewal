@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-text-color: #323b4c;
+	--secondary-text-color: #577592;
+	--accent-color:#323b4c;
+	--accent-color-dark: #1d69a3;
+	--padding-inline-section: 20px;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	color: var(--primary-text-color);
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	color: var(--primary-text-color);
+	line-height: 1.8rem;
+	font-weight: 200;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+ul {
+	list-style: none;
+}
+
+.hr {
+	margin-top: 30px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.container {
+	max-width: 1080px;
+	margin-inline: auto;
+	padding-inline: var(--padding-inline-section);
+}
+
+.primary-button {
+	background-color: var(--accent-color);
+	border-radius: 6px;
+	font-weight: 700;
+	color: white;
+	padding: 12px 24px;
+	box-shadow: 0 0 2px var(--secondary-text-color);
+	transform: 0.2s ease-out;
+}
+
+.primary-button:hover {
+	background-color: var(--accent-color-dark);
+}
+
+.secondory-button {
+	border-radius: 6px;
+	font-weight: 700;
+	color: var(--primary-text-color);
+	padding: 12px 24px;
+	box-shadow: 0 0 2px var(--secondary-text-color);
+	transform: 0.2s ease-out;
+}
+
+.secondory-button:hover {
+	background-color: var(--accent-color);
+	color: white;
+}
+
+.small-bold-text {
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.top-banner {
+	background-color: #4fb3d4;
+	background-image: url('./assets/asset_32.png');
+	background-size: 300px;
+}
+
+.logo {
+	font-family: 'Cedarville Cursive';
+	font-size: 40px;
+	color: #323b4c;
+}
+
+.banner-text {
+	text-align: center;
+	padding: 15px 30px;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.main-nav {
+	margin-top: 20px;
+	justify-content: space-between;
+}
+
+.company-logo img {
+	width: 200px
+}
+
+.nav-links {
+	flex-basis: 730px;
+	justify-content: end;
+}
+
+.nav-links ul {
+	justify-content: end;
+	gap: 40px;
+}
+
+header {
+	padding: 50px var(--padding-inline-section) 0;
+}
+
+.header-section {
+	justify-content: center;
+	gap: 50px;
+}
+
+.header-left {
+	max-width: 40vw;
+}
+
+.header-left h1 {
+	margin: 20px 0px;
+}
+
+.header-right img {
+	width: 600px;
+}
+
+.companies-header {
+	text-align: center;
+	margin-block: 30px;
+	columns: var(--primary-text-color);
+}
+
+.logos {
+	margin: auto;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 60%;
+	text-align: center;
+}
+
+.logo {
+	height: 46px;
+}
+
+.features-header {
+	text-align: center;
+	margin: 30px 0px;
+}
+
+.feature-section {
+	padding: 80px var(--padding-inline-section) 0;
+	background-image: url(./assets/asset_34.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.features-heading-text {
+	margin-bottom: 20px;
+}
+
+
+.feature-area {
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 40px;
+	margin-top: 20px;
+}
+
+.feature-card {
+	flex-direction: column;
+	gap: 20px;
+	max-width: 30%;
+	padding: 10px;
+}
+
+.feature-card img {
+	border-radius: 100px;
+	width: 80px;
+}
+
+
+.feature-card p {
+	text-align: center;
+}
+
+.big-feature-section {
+	padding: 30px var(--padding-inline-section) 0;
+}
+
+.big-feature-container {
+	gap: 30px;
+}
+
+.feature-image  img {
+	width: 250px;
+	float: left; 
+	padding: 30px;
+	/* border-radius: 50px; */
+}
+
+.feature-desc {
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.examples-card {
+	width: 25%;
+	position: relative;
+	margin: 10px;
+	min-height: 300px;
+	background-color: black;
+	background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(./assets/asset_37.jpeg);
+	background-size: cover;
+}
+
+.examples-card:nth-child(1) {
+	background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(./assets/asset_38.jpeg);
+	background-size: cover;
+}
+
+.examples-card:nth-child(2) {
+	background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(./assets/asset_39.jpeg);
+	background-size: cover;
+}
+
+.card-text {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	color: white;
+}
