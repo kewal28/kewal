@@ -49,6 +49,10 @@ ul {
 	list-style: none;
 }
 
+footer {
+	margin-top: 150px;
+}
+
 .hr {
 	margin-top: 30px;
 }
